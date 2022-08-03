@@ -6,6 +6,6 @@ public class HealsCheckSteps {
 
     @Step("Check login: '{login}' and password: '{password}'")
     public boolean checkLoginAndPassword(String login, String password){
-        return login.length() > 6 && password.length() > 6;
+        return login.length() >= 6 && password.length() >= 6;
     }
 }
